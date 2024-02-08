@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Money Tracker App</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+    <script src="server.js"></script>
+    <header>
+      <h1>Money Tracker App</h1>
+    </header>
+    <main>
+      <section class="income-expenses">
+        <div class="income">
+          <h2>Income</h2>
+          <input type="number" id="income-input" placeholder="Enter income" />
+          <button id="add-income-btn">Add Income</button>
+          <ul id="income-list"></ul>
+          <div class="total">
+            <span>Total Income:</span>
+            <strong id="income-total">0</strong>
+          </div>
+        </div>
+        <div class="expenses">
+          <h2>Expenses</h2>
+          <input type="number" id="expense-input" placeholder="Enter expense" />
+          <button id="add-expense-btn">Add Expense</button>
+          <ul id="expense-list"></ul>
+          <div class="total">
+            <span>Total Expenses:</span>
+            <strong id="expense-total">0</strong>
+          </div>
+        </div>
+      </section>
+      <section class="summary">
+        <div class="balance">
+          <h2>Balance</h2>
+          <strong id="balance-total">0</strong>
+        </div>
+        <button id="clear-btn">Clear All</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
